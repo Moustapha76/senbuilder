@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senbuilder</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="rail"></div>
+        <div class="navbar">
+            <a href="#" class="logo"><img src="./assets/logo.svg" alt="logo"></a>
+            <ul class="menu-list">
+                <li class="active"><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Company</a>
+                </li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="tel:0656716530" class="tel"><i class="fa-solid fa-phone"></i> +212 656 716 530</a>
+            <button class="open"><i class="fa-solid fa-bars"></i> Menu</button>
+            <nav class="navbar">
+                <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="menu">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">Company</a>
+                    </li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <div class="split-slideshow">
+                <div class="mask"></div>
+                <div class="slideshow">
+                    <div class="slider">
+                        <div class="item">
+                            <img src="./assets/banner/banner-1.jpg" alt="Image" />
+                        </div>
+                        <div class="item">
+                            <img src="./assets/banner/banner-2.jpg" alt="Image" />
+                        </div>
+                        <div class="item">
+                            <img src="./assets/banner/banner-3.jpg" alt="Image" />
+                        </div>
+                        <div class="item">
+                            <img src="./assets/banner/banner-4.jpg" alt="Image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow-text">
+                    <div class="item">
+                        <h1>Provide effective Building Solutions</h1>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil sunt alias velit, ut fuga quo, numquam optio, incidunt ea facilis excepturi accusamus quod nulla? Fuga non impedit voluptatem beatae?</span>
+                        <div class="btn-group">
+                            <a href="#" role="button" class="btn">Contact us</a>
+                            <a href="#" role="button" class="btn">Our services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="accroche">
+            <div class="twin">
+                <div class="item">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <div class="twin-contact">
+                        <b>Quick contact</b>
+                        <span>Email : moustapha.md26@gmail.com</span>
+                        <span>Phone : +212 656 716 530</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <div class="twin-contact">
+                        <b>Our location</b>
+                        <span>20280 Mostaqbal</span>
+                        <span>Sidi maarouf, Casablanca</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tips">
+                <h2>A leading developer of a grade commercial & residential projects</h2>
+                <p>Today Senbuilder has over 4,0000 professionals on its payroll all over the world</p>
+                <a href="#" class="btn btn-more">Learn more <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+        </section>
+        <section>
+            <!-- <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./public/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            spaceBetween: 40,
+            slidesPerView: 1,
+            loop: true,
+
+        })
+        var $ = jQuery;
+        var $slider = $('.slideshow .slider'),
+            maxItems = $('.item', $slider).length,
+            dragging = false,
+            tracking,
+            rightTracking;
+
+        $sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
+
+        rightItems = $('.item', $sliderRight).toArray();
+        reverseItems = rightItems.reverse();
+        $('.slider', $sliderRight).html('');
+        for (i = 0; i < maxItems; i++) {
+            $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+        }
+
+        $slider.addClass('slideshow-left');
+        $('.slideshow-left').slick({
+            vertical: true,
+            verticalSwiping: true,
+            arrows: false,
+            infinite: true,
+            dots: true,
+            speed: 1000,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+
+            if (currentSlide > nextSlide && nextSlide == 0 && currentSlide == maxItems - 1) {
+                $('.slideshow-right .slider').slick('slickGoTo', -1);
+                $('.slideshow-text').slick('slickGoTo', maxItems);
+            } else if (currentSlide < nextSlide && currentSlide == 0 && nextSlide == maxItems - 1) {
+                $('.slideshow-right .slider').slick('slickGoTo', maxItems);
+                $('.slideshow-text').slick('slickGoTo', -1);
+            } else {
+                $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
+                $('.slideshow-text').slick('slickGoTo', nextSlide);
+            }
+        }).on("mousewheel", function(event) {
+            event.preventDefault();
+            if (event.deltaX > 0 || event.deltaY < 0) {
+                $(this).slick('slickNext');
+            } else if (event.deltaX < 0 || event.deltaY > 0) {
+                $(this).slick('slickPrev');
+            };
+        }).on('mousedown touchstart', function() {
+            dragging = true;
+            tracking = $('.slick-track', $slider).css('transform');
+            tracking = parseInt(tracking.split(',')[5]);
+            rightTracking = $('.slideshow-right .slick-track').css('transform');
+            rightTracking = parseInt(rightTracking.split(',')[5]);
+        }).on('mousemove touchmove', function() {
+            if (dragging) {
+                newTracking = $('.slideshow-left .slick-track').css('transform');
+                newTracking = parseInt(newTracking.split(',')[5]);
+                diffTracking = newTracking - tracking;
+                $('.slideshow-right .slick-track').css({
+                    'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'
+                });
+            }
+        }).on('mouseleave touchend mouseup', function() {
+            dragging = false;
+        });
+
+        $('.slideshow-right .slider').slick({
+            swipe: true,
+            vertical: true,
+            arrows: false,
+            infinite: true,
+            speed: 950,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+            initialSlide: maxItems - 1,
+            loop: true
+        });
+        $('.slideshow-text').slick({
+            swipe: false,
+            vertical: true,
+            arrows: false,
+            infinite: true,
+            speed: 900,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+        });
+    </script>
+</body>
+
+</html>
