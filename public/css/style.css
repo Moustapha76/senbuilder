@@ -91,21 +91,32 @@ a {
 
 a.tel {
     padding: 10px 20px;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 1px;
     color: var(--color0);
-    background: var(--color1);
     border: none;
+    font-weight: 900;
 }
 
-.rail {
-    width: 75px;
-    height: 4px;
+ul.menu-list li:before {
+    content: "";
+    position: absolute;
     background: var(--color1);
-    top: 111px;
-    position: fixed;
-    z-index: 9999999999;
-    left: calc(30% + 105px);
+    top: calc(100% + 32px);
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+ul.menu-list li.active:before,ul.menu-list li:hover:before {
+    opacity: 1;
+}
+
+ul.menu-list li {
+    position: relative;
 }
 
 .btn-group {
@@ -114,6 +125,10 @@ a.tel {
     align-items: center;
     grid-gap: 10px;
     margin-top: 35px;
+}
+
+.btn-group .btn:nth-child(2) {
+    background: var(--hover);
 }
 
 .btn {
@@ -244,6 +259,7 @@ header nav.navbar ul li:hover a {
 
 .banner {
     height: 100vh;
+    width: 100%;
 }
 
 .slideshow {
@@ -278,7 +294,7 @@ header nav.navbar ul li:hover a {
     content: "";
     position: absolute;
     inset: 0px;
-    background: linear-gradient(45deg, black, transparent);
+    background: linear-gradient(126deg, #000000bd, #0000009e,transparent);
     z-index: 1;
 }
 
@@ -301,9 +317,9 @@ header nav.navbar ul li:hover a {
     width: 34px;
     height: auto;
     inset: 90vh 40px auto auto;
-    transform: translateY(-50%);
     color: rgb(255, 255, 255);
     display: block;
+    top: 45vh;
 }
 
 .slideshow .slick-dots li {
@@ -332,7 +348,7 @@ header nav.navbar ul li:hover a {
     left: auto;
     transform: translateY(-50%);
     transition: all 0.3s ease-in-out 0s;
-    opacity: 0.4;
+    opacity: 1;
 }
 
 .slideshow .slick-dots li.slick-active button::before {
@@ -356,11 +372,11 @@ header nav.navbar ul li:hover a {
 .slideshow-text {
     position: absolute;
     top: 50vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    transform: translate(0%, -50%);
     z-index: 100;
     font-size: 40px;
-    width: 100vw;
+    width: 50vw;
     text-align: left;
     color: rgb(255, 255, 255);
     font-weight: 100;
@@ -368,7 +384,7 @@ header nav.navbar ul li:hover a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10% 50% 10% 8%;
+    padding: 10% 0% 10% 10%;
 }
 
 .slideshow-text h1 {
@@ -444,11 +460,13 @@ section {
 
 section#accroche {
     display: flex;
-    padding: 0% 15%;
+    margin: 0% 12%;
     position: relative;
     align-items: flex-end;
     top: -10rem;
     z-index: 9;
+    width: auto;
+    padding: 0;
 }
 
 section#accroche .tips {
@@ -462,14 +480,14 @@ section#accroche .tips {
 section#accroche .tips .btn {
     position: relative;
     top: 70px;
-    background: var(--color0);
-    color: var(--color1);
-    border: 2px solid var(--color1);
+    background: var(--hover);
+    color: var(--color0);
+    border: 12px solid var(--color1);
 }
 
 section#accroche .tips .btn:hover {
-    background: var(--hover);
-    color: var(--color0);
+    background: var(--color0);
+    color: var(--color1);
 }
 
 section#accroche .tips h2 {
