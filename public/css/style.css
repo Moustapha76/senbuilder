@@ -3,8 +3,9 @@
     --color0: #fff;
     --color1: orangered;
     --color2: #4F4F4F;
-    --color3: #ffd8c1;
-    --font: "Mukta", sans serif;
+    --color3: #fffaf8;
+    --font:
+    "Mukta", sans serif;
     --hover: black;
 }
 
@@ -12,6 +13,57 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+
+section#services .container .item-service .heading {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    border-bottom: 1px solid #dfdada;
+    padding-bottom: 30px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+section#services .container .item-service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 20px;
+    background: var(--color0);
+    padding: 30px 40px;
+    box-shadow: 10px 10px 10px #7c727212;
+}
+
+section#services .container .item-service:nth-child(1) i {
+    color: var(--color0);
+}
+
+section#services .container .item-service:nth-child(1) a.btn {
+    background: #852907;
+}
+
+section#services .container .item-service:nth-child(1) a.btn:hover {
+    background: var(--hover);
+}
+
+section#services .container .item-service:nth-child(1) {
+    background: var(--color1);
+    color: var(--color0);
+}
+
+section#services .container .item-service h3 {}
+
+section#services .container .item-service i {
+    font-size: 60px;
+    color: var(--color1);
+}
+
+section#services .container {
+    display: flex;
+    grid-gap: 30px;
+    padding: 2% 0;
 }
 
 .twin-contact {
@@ -69,11 +121,12 @@ header>div.navbar {
     position: fixed;
     top: 0;
     height: 80px;
-    z-index: 9;
+    z-index: 999;
     align-items: center;
     justify-content: space-between;
+    transition: all .3s linear;
 }
-
+header>div.navbar.fixed{background-color: var(--hover);}
 header>div.navbar:before {
     content: "";
     position: absolute;
@@ -401,7 +454,7 @@ header nav.navbar ul li:hover a {
     letter-spacing: 2px;
     line-height: 1.5;
     display: block;
-    margin: 20px 0;
+    margin: 30px 0;
     text-align: justify;
 }
 
@@ -455,7 +508,31 @@ main {
 
 section {
     position: relative;
-    padding: 2% 10%;
+    padding: 2% 4%;
+    margin: 0% 10%;
+}
+
+section#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 40px;
+    background: var(--color3);
+}
+
+section#services .title {
+    text-align: center;
+    font-size: 20px;
+    color: var(--color1);
+    font-weight: 700;
+}
+
+section#services .title h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+    padding: 0 12%;
+    color: var(--color2);
 }
 
 section#accroche {

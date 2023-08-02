@@ -11,15 +11,8 @@ close.addEventListener('click', function() {
         navbar.style.transform = "translate(300px)";
         navbar.style.opacity = 0;
     })
-    // var body = document.querySelector('body');
-    // body.document.addEventListener('click', function() {
-    //     navbar.style.transition = "all .3s linear";
-    //     navbar.style.transform = "translate(300px)";
-    //     navbar.style.opacity = 0;
-    // })
-
-var down = document.querySelector('button.down');
-down.addEventListener('click', function() {
-    var height = window.outerHeight;;
-    window.scrollTo(0, height);
+var navbar = document.querySelector('header div.navbar')
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 0){navbar.classList.add('fixed')}
+    else{navbar.classList.remove('fixed')}
 })
