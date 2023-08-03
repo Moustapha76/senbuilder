@@ -3,9 +3,8 @@
     --color0: #fff;
     --color1: orangered;
     --color2: #4F4F4F;
-    --color3: #fbfbfb;
-    --font:
-    "Mukta", sans serif;
+    --color3: #f0f0f0;
+    --font: "Mukta", sans serif;
     --hover: black;
     --radius: 50px;
 }
@@ -56,7 +55,7 @@ form {
 .input-group {
     display: flex;
     width: 100%;
-    grid-gap: 30px;
+    grid-gap: 10px;
 }
 
 .input-group input,
@@ -89,6 +88,7 @@ section#contact-form aside .info {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right;
 }
 
 .img-bloc {
@@ -138,10 +138,10 @@ ul.menu-list li:before {
     content: "";
     position: absolute;
     background: var(--color1);
-    top: calc(100% + 37px);
+    top: calc(100% + 20px);
     left: 50%;
     width: 100%;
-    height: 3px;
+    height: 7px;
     transform: translate(-50%);
     opacity: 0;
     transition: all .3s linear;
@@ -225,19 +225,19 @@ ul.menu-list {
 }
 
 ul.menu-list li a {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 500;
     color: var(--color0);
 }
 
 header>div.navbar {
     display: flex;
-    padding: 3% 10%;
+    padding: 40px 10%;
     width: 100%;
     position: fixed;
     top: 0;
-    height: 80px;
+    height: 50px;
     z-index: 999;
     align-items: center;
     justify-content: space-between;
@@ -551,6 +551,64 @@ section {
     margin: 0% 10%;
 }
 
+section#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    grid-gap: 40px;
+    padding: 0% 10% 8%;
+}
+
+section#about .container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+section#about .jumbotron {
+    box-shadow: 10px 10px 50px #0000003b;
+    padding: 25px;
+    display: flex;
+    grid-gap: 20px;
+}
+
+section#about .jumbotron i {
+    color: var(--color1);
+    font-size: 25px;
+}
+
+section#about ul {
+    padding: 20px 40px;
+    font-weight: 600;
+}
+
+section#about .title {
+    padding-bottom: 10px;
+}
+
+section#about .title h2 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+section#about .title span {
+    color: var(--color1);
+    font-weight: 900;
+    padding-left: 70px;
+    position: relative;
+}
+
+section#about .title span:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: var(--color1);
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 section#contact-form {
     position: relative;
     box-shadow: 1px 1px 50px #0000001c;
@@ -656,6 +714,7 @@ section#recent .container .feature .description {
 
 section#hero {
     display: flex;
+    grid-gap: 30px;
 }
 
 section#hero .container {
