@@ -22,25 +22,21 @@
             <a href="#" class="logo"><img src="./assets/logo.svg" alt="logo"></a>
             <ul class="menu-list">
                 <li class="active"><a href="#">Home</a></li>
-                <li>
-                    <a href="#">Company</a>
-                </li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/pages/company.html">Company</a></li>
+                <li><a href="./pages/service.html">services</a></li>
+                <li><a href="/pages/projects.html">projects</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
-            <a href="tel:0656716530" class="tel"><i class="fa-solid fa-phone"></i> +212 656 716 530</a>
-            <button class="open"><i class="fa-solid fa-bars"></i> Menu</button>
-            <nav class="navbar">
+            <a href="tel:0656716530" class="tel"><i class="fa-solid fa-phone"></i>+212 656 716 530</a>
+            <button class="open"><i class="fa-solid fa-bars"></i></button>
+            <nav class="navbar-mobile">
                 <button class="close"><i class="fa-solid fa-xmark"></i></button>
                 <ul class="menu">
                     <li class="active"><a href="#">Home</a></li>
-                    <li>
-                        <a href="#">Company</a>
-                    </li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/pages/company.html">Company</a></li>
+                    <li><a href="./pages/service.html">services</a></li>
+                    <li><a href="/pages/projects.html">projects</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -256,12 +252,12 @@
             <div class="title">
                 <span>Lorem ipsum dolor sit amet.</span>
                 <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, iste.</h2>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
             </div>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
         </section>
         <section id="contact-form">
             <aside>
@@ -540,7 +536,19 @@
     <script>
         $('.flip-bx').tilt({
             glare: true,
-            maxGlare: .5
+            maxGlare: 1
+        })
+        $('.tips').tilt({
+            glare: true,
+            maxGlare: 1
+        })
+        $('.testimony').tilt({
+            glare: true,
+            maxGlare: 1
+        })
+        $('.img-bloc').tilt({
+            glare: true,
+            maxGlare: 1
         })
     </script>
     <script src="./public/js/script.js "></script>
