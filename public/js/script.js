@@ -34,7 +34,7 @@ function change() {
     });
     // Show those filtered results:
     results.forEach(function(result) {
-        result.style.display = 'block';
+        result.style.display = 'flex';
     });
 }
 change();
