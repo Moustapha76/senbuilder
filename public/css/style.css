@@ -20,7 +20,9 @@
     display: flex;
 }
 
-.project .result .gallery .item {width: auto;}
+.project .result .gallery .item {
+    width: auto;
+}
 
 section#project .checkbox {
     width: auto;
@@ -133,7 +135,14 @@ section#project .filter {
     position: relative;
 }
 
-.service-container {overflow: hidden;font-size: 18px;}
+.service-container {
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.service-container .service {
+    flex-direction: column;
+}
 
 .service-container h3 {
     font-size: 48px;
@@ -275,7 +284,10 @@ section#contact-form aside .info {
     object-fit: cover;
     object-position: left;
 }
-#hero .img-bloc img{object-position: right;}
+
+#hero .img-bloc img {
+    object-position: right;
+}
 
 .img-bloc {
     width: 50%;
@@ -349,7 +361,11 @@ ul.menu-list li {
     grid-gap: 10px;
     margin-top: 35px;
 }
-.banner.interne .btn-group{display: none;}
+
+.banner.interne .btn-group {
+    display: none;
+}
+
 .btn-group .btn:nth-child(2) {
     background: var(--hover);
 }
@@ -560,13 +576,16 @@ header nav.navbar-mobile ul li:hover a {
     height: 65vh;
     top: 0;
 }
-header.service{height: 65vh;}
+
+header.service {
+    height: 65vh;
+}
 
 .banner.interne:before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(122deg, #000000f0,#000000b8, transparent);
+    background: linear-gradient(122deg, #000000f0, #000000b8, transparent);
     z-index: 1;
 }
 
@@ -1009,7 +1028,10 @@ section#about {
     padding: 0% 5% 8%;
 }
 
-section#about.company {padding: 8% 5%;margin: 0 5%;}
+section#about.company {
+    padding: 8% 5%;
+    margin: 0 5%;
+}
 
 section#about .img-bloc {
     width: 100%;
@@ -1039,7 +1061,11 @@ section#about ul {
     font-weight: 600;
 }
 
-section#about.company .container ul {column-count: 2;list-style: none;padding: 5% 0;}
+section#about.company .container ul {
+    column-count: 2;
+    list-style: none;
+    padding: 5% 0;
+}
 
 section#about.company .container ul li {
     margin-bottom: 16px;
@@ -1240,7 +1266,6 @@ section#hero .container .twin .item b {
     line-height: 1.1;
     font-weight: 500;
 }
-
 
 section#contact .title h2,
 section#hero .container .title h2 {
@@ -1802,7 +1827,7 @@ footer .bande1 .bloc form {
     position: relative;
 }
 
-footer .bande1 .bloc form ~ p {
+footer .bande1 .bloc form~p {
     opacity: 1;
 }
 
@@ -1825,89 +1850,270 @@ footer .bande1 .bloc form input {
 
 
 /* footer */
- 
- /* responsivity */
- @media screen and (max-width :991px){
-    section#service-list{grid-template-columns: 1fr;margin: 5%;}
-    section#service-list{margin: 2% 0;padding: 20px 0;}
-    .filter{padding: 20px;}
+
+
+/* responsivity */
+
+@media screen and (max-width :991px) {
+    section#service-list {
+        grid-template-columns: 1fr;
+        margin: 5%;
+    }
+    section#service-list {
+        margin: 2% 0;
+        padding: 20px 0;
+    }
+    .filter {
+        padding: 20px;
+    }
     .service-container h3 {
         font-size: 30px;
     }
-    .service-container{padding: 0 20px;}
-    ul.menu-list{display: none;}
+    .service-container {
+        padding: 0 20px;
+    }
+    ul.menu-list {
+        display: none;
+    }
     /* header nav.navbar-mobile,header nav.navbar-mobile ul{display: flex;} */
-    header button.open{display: block;}
-    header a.tel{display: none;}
-    header,.banner,.slideshow .slider,.slideshow .slider .item,.slideshow{height: 60vh;z-index: 99;}
-    .slideshow-text{top: 30vh;}
-    .slideshow-text{width: 80%;}
-    .slideshow-text h1{font-size: 50px;}
-    section#accroche{top: 5rem;z-index: 9;}
-    section#accroche .tips{grid-gap: 10px;
+    header button.open {
+        display: block;
+    }
+    header a.tel {
+        display: none;
+    }
+    header,
+    .banner,
+    .slideshow .slider,
+    .slideshow .slider .item,
+    .slideshow {
+        height: 60vh;
+        z-index: 99;
+    }
+    .slideshow-text {
+        top: 30vh;
+    }
+    .slideshow-text {
+        width: 80%;
+    }
+    .slideshow-text h1 {
+        font-size: 50px;
+    }
+    section#accroche {
+        top: 5rem;
+        z-index: 9;
+    }
+    section#accroche .tips {
+        grid-gap: 10px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;}
-    section#accroche .tips .btn{top: 0;}
-    section#accroche .twin{display: none;}
-    section#about{grid-template-columns: 1fr;padding-top: 20%;}
-    section#services .title h2{font-size: 30px;}
+        align-items: flex-start;
+    }
+    section#accroche .tips .btn {
+        top: 0;
+    }
+    section#accroche .twin {
+        display: none;
+    }
+    section#about {
+        grid-template-columns: 1fr;
+        padding-top: 20%;
+    }
+    section#services .title h2 {
+        font-size: 30px;
+    }
     section#services .container,
-    section#hero,section#recent .container{flex-wrap: wrap;}
-    section#recent .container{grid-template-columns: 1fr;}
-    section#hero .container,.img-bloc{width: 100%;}
-    section#recent .container .feature{height: auto;}
-    section#marques{grid-template-columns: 1fr 1fr 1fr 1fr;display: grid;}
-    section#contact .title h2, section#hero .container .title h2{font-size: 30px;}
-    section#contact h2{width: 100%;}
-    section#contact-form{flex-wrap: wrap;margin: 0%;}
-    section#contact-form aside{width: 100%;}
-    section#contact{margin: 0%;min-height: 700px;}
-    section#contact-form aside h4{font-size: 35px;}
-    section#contact ul,section#contact-form aside span{font-size: 30px;}
-    form {padding: 10%;}
-    section#team .container{display: grid;grid-template-columns: 1fr 1fr;}
-    section#testimonial{flex-wrap: wrap;}
-    section#testimonial .testimony{width: 100%;top: 100px;}
-    section#testimonial .title p{font-size: 20px;}
-    .swiper-button-prev, .swiper-rtl .swiper-button-next{left: 20px !important;}
-    .swiper-button-next, .swiper-rtl .swiper-button-prev{right: 20px !important;}
-    section#testimonial .testimony::before,section#testimonial .testimony:after{display: none;}
-    footer .bande1{padding-top: 20%;grid-template-columns: 1fr 1fr;}
- }
- @media screen and (max-width :767px)
- {
-    .slideshow-text h1{font-size: 30px;}
-    .btn-group{flex-wrap: wrap;margin-top: 30px;}
-    /* .slideshow-text{top: 55vh;} */
-    section#accroche{top: 2rem;}
-    section#accroche .tips h2{font-size: 20px;}
-    .slideshow-text span{display: none;}
-    section#accroche{margin: 4%;}
-    section#services .title h2,section#recent .title h2,.title h2{font-size: 20px;padding: 0%;}
-    section#hero{margin: 0;grid-gap: 0;}
-    section{margin: 0;}
-    section#marques{display: flex;flex-wrap: wrap;}
-    section#hero .container .twin .item b,section#contact .title h2, section#hero .container .title h2{font-size: 20px;}
-    section#hero .container .twin .item i{font-size: 30px;}
-    section#team .container{grid-template-columns: 1fr;}
-    section#contact ul, section#contact-form aside span{font-size: 20px;}
-    section#contact .title h2, section#hero .container .title h2{line-height: 1.5;}
-    form,section#services,section{padding: 5%;}
-    .input-group{flex-wrap: wrap;}
-    select~i{top: 75%;}
-    .input-group input, textarea, select{font-size: 18px;}
-    .submit-group{flex-wrap: wrap;}
-    .swiper-button-next, .swiper-button-prev{top: 110% !important;}
-    footer .map h2,section#about .title h2{font-size: 25px;}
-    footer .map{margin: 0%;}
-    footer .bande1{padding-top: 35%;grid-template-columns: 1fr;}
-    .banner.interne .item h1{font-size: 40px;}
-    section#about.company .container ul{column-count: 1;}
-    section.more-about h2{font-size: 35px;}
-    section.more-about .content{grid-template-columns: 1fr;}
-    .gallery{flex-wrap: wrap;}
-    .gallery .item{width: 100%;}
-    section#hero .container .twin{flex-wrap: wrap;grid-gap: 0;}
+    section#hero,
+    section#recent .container {
+        flex-wrap: wrap;
+    }
+    section#recent .container {
+        grid-template-columns: 1fr;
+    }
+    section#hero .container,
+    .img-bloc {
+        width: 100%;
+    }
+    section#recent .container .feature {
+        height: auto;
+    }
+    section#marques {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+    }
+    section#contact .title h2,
+    section#hero .container .title h2 {
+        font-size: 30px;
+    }
+    section#contact h2 {
+        width: 100%;
+    }
+    section#contact-form {
+        flex-wrap: wrap;
+        margin: 0%;
+    }
+    section#contact-form aside {
+        width: 100%;
+    }
+    section#contact {
+        margin: 0%;
+        min-height: 700px;
+    }
+    section#contact-form aside h4 {
+        font-size: 35px;
+    }
+    section#contact ul,
+    section#contact-form aside span {
+        font-size: 30px;
+    }
+    form {
+        padding: 10%;
+    }
+    section#team .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section#testimonial {
+        flex-wrap: wrap;
+    }
+    section#testimonial .testimony {
+        width: 100%;
+        top: 100px;
+    }
+    section#testimonial .title p {
+        font-size: 20px;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 20px !important;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 20px !important;
+    }
+    section#testimonial .testimony::before,
+    section#testimonial .testimony:after {
+        display: none;
+    }
+    footer .bande1 {
+        padding-top: 20%;
+        grid-template-columns: 1fr 1fr;
+    }
 }
- @media screen and (max-width :576px){}
+
+@media screen and (max-width :767px) {
+    .slideshow-text h1 {
+        font-size: 30px;
+    }
+    .btn-group {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    /* .slideshow-text{top: 55vh;} */
+    section#accroche {
+        top: 2rem;
+    }
+    section#accroche .tips h2 {
+        font-size: 20px;
+    }
+    .slideshow-text span {
+        display: none;
+    }
+    section#accroche {
+        margin: 4%;
+    }
+    section#services .title h2,
+    section#recent .title h2,
+    .title h2 {
+        font-size: 20px;
+        padding: 0%;
+    }
+    section#hero {
+        margin: 0;
+        grid-gap: 0;
+    }
+    section {
+        margin: 0;
+    }
+    section#marques {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section#hero .container .twin .item b,
+    section#contact .title h2,
+    section#hero .container .title h2 {
+        font-size: 20px;
+    }
+    section#hero .container .twin .item i {
+        font-size: 30px;
+    }
+    section#team .container {
+        grid-template-columns: 1fr;
+    }
+    section#contact ul,
+    section#contact-form aside span {
+        font-size: 20px;
+    }
+    section#contact .title h2,
+    section#hero .container .title h2 {
+        line-height: 1.5;
+    }
+    form,
+    section#services,
+    section {
+        padding: 5%;
+    }
+    .input-group {
+        flex-wrap: wrap;
+    }
+    select~i {
+        top: 75%;
+    }
+    .input-group input,
+    textarea,
+    select {
+        font-size: 18px;
+    }
+    .submit-group {
+        flex-wrap: wrap;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 110% !important;
+    }
+    footer .map h2,
+    section#about .title h2 {
+        font-size: 25px;
+    }
+    footer .map {
+        margin: 0%;
+    }
+    footer .bande1 {
+        padding-top: 35%;
+        grid-template-columns: 1fr;
+    }
+    .banner.interne .item h1 {
+        font-size: 40px;
+    }
+    section#about.company .container ul {
+        column-count: 1;
+    }
+    section.more-about h2 {
+        font-size: 35px;
+    }
+    section.more-about .content {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        flex-wrap: wrap;
+    }
+    .gallery .item {
+        width: 100%;
+    }
+    section#hero .container .twin {
+        flex-wrap: wrap;
+        grid-gap: 0;
+    }
+}
+
+@media screen and (max-width :576px) {}
